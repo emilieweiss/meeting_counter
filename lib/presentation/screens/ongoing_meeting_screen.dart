@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class OngoingMeeting extends StatelessWidget {
-  const OngoingMeeting({Key? key}) : super(key: key);
+  const OngoingMeeting({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Ongoing Meeting')),
-      body: Center(child: Text('This is the Ongoing Meeting Screen')),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () => context.go('/'),
+          child: Text('Home'),
+        ),
+      ),
     );
   }
 }
