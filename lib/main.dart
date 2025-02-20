@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '/presentation/widgets/bottom_nav_bar.dart';
-import 'config/router.dart';
 
 void main() {
   runApp(const MyApp());
