@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import '/presentation/widgets/bottom_nav_bar.dart';
 import 'config/router.dart';
 
 void main() {
@@ -11,9 +11,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      routerConfig: router, // Brug GoRouter her
+      title: 'My App',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const BottomNavBar(),
     );
   }
 }
