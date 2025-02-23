@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:meeting_counter/presentation/dialogs/create_meeting_dialog.dart';
-import 'package:meeting_counter/presentation/screens/ongoing_meeting_screen.dart';
 import 'package:meeting_counter/presentation/widgets/round_button.dart';
 
 class HomeScreen extends StatelessWidget {
