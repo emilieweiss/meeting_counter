@@ -19,6 +19,7 @@ class CreateMeetingDialog extends StatelessWidget {
         ),
         TextButton(
           onPressed: () {
+            Navigator.pop(context);
             GoRouter.of(context).go(routeName);
             context.go(routeName);
           },
