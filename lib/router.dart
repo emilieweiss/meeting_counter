@@ -12,10 +12,7 @@ final GoRouter router = GoRouter(
     ShellRoute(
       builder: (context, state, child) {
         print("🔥 ShellRoute builder() kører!"); // DEBUGGING
-        return Scaffold(
-          body: child, // ✅ Korrekt - Ingen Column, direkte body
-          bottomNavigationBar: BottomNavBar(), // ✅ Korrekt placering af navbar!
-        );
+        return Scaffold(body: child, bottomNavigationBar: BottomNavBar());
       },
       routes: [
         GoRoute(path: '/', builder: (context, state) => const HomeScreen()),
